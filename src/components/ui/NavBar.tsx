@@ -1,9 +1,8 @@
 import {getServerSession} from "next-auth";
 import Link from "next/link";
 import {buttonVariants} from "@/ui/Button"
-
-interface NavBarProps {
-}
+import SignInButton from "@/ui/SignInButton"
+import SignOutButton from "@/ui/SignOutButton"
 
 const NavBar = async ({}) => {
     const session = await getServerSession()
