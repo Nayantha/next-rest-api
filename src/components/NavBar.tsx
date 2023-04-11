@@ -13,7 +13,7 @@ const NavBar = async ({}) => {
             <Link href={"/"} className={buttonVariants({variant: "link"})}>
                 API With NEXT.JS 13 1.0
             </Link>
-            <div className={"md-hidden"}>
+            <div className={"md:hidden"}>
                 <ThemeToggle/>
             </div>
             <div className={"hidden md:flex gap-4"}>
