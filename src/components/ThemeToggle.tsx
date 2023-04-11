@@ -28,7 +28,7 @@ const ThemeToggle: FC<ThemeToggleProps> = ({}) => {
                 <span>Light</span>
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => {
-                setTheme("light")
+                setTheme("dark")
             }}>
                 <Moon className={"mr-2 h-4 w-4"}/>
                 <span>Dark</span>
