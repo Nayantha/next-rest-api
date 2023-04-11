@@ -3,6 +3,7 @@ import Link from "next/link";
 import {buttonVariants} from "@/ui/Button"
 import SignInButton from "@/components/SignInButton"
 import SignOutButton from "@/components/SignOutButton"
+import ThemeToggle from "@/components/ThemeToggle"
 
 const NavBar = async ({}) => {
     const session = await getServerSession()
@@ -13,10 +14,10 @@ const NavBar = async ({}) => {
                 API With NEXT.JS 13 1.0
             </Link>
             <div className={"md-hidden"}>
-                {/*<ThemeToggle/>*/}
+                <ThemeToggle/>
             </div>
             <div className={"hidded md:flex gap-4"}>
-                {/*<ThemeToggle/>*/}
+                <ThemeToggle/>
                 <Link href={"/documentation"} className={buttonVariants({variant: "ghost"})}>
                     Documentation
                 </Link>
