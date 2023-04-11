@@ -6,9 +6,7 @@ import Providers from "@/components/Providers";
 
 const inter = Inter({subsets: ["latin"]})
 
-export default function RootLayout({children,}: {
-    children: React.ReactNode
-}) {
+export default function RootLayout({children,}: { children: React.ReactNode }) {
     return (
         <html lang="en" className={classNameMerge(
             "bg-white text-slate-900 antialiased", inter.className
@@ -17,6 +15,8 @@ export default function RootLayout({children,}: {
         <Providers>
             {children}
         </Providers>
+        {/* Allow more height in mobile devices */}
+        <div className={"h-40 md:hidden"}></div>
         </body>
         </html>
     )
