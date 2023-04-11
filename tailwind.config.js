@@ -1,4 +1,5 @@
 const {fontFamily} = require("tailwindcss/defaultTheme")
+const {colors} = require("tailwindcss/colors")
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: ["class"],
@@ -18,6 +19,11 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ["var(--font-inter)", ...fontFamily.sans],
+            },
+            colors: {
+                ...colors,
+                "light-gold": "#F5BC51",
+                "dark-gold": "#533519",
             },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
