@@ -1,6 +1,6 @@
 import {forwardRef, HTMLAttributes} from "react"
 import {cva, VariantProps} from "class-variance-authority"
-import {classNameMerge} from "@/app/lib/utils";
+import {classNameMerge} from "@/lib/utils";
 
 // FC = functional components
 
