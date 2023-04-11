@@ -3,7 +3,8 @@ import {FC} from 'react'
 import {useTheme} from 'next-themes'
 import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger} from "@/ui/DropdownMenu"
 import Button from "@/ui/Button";
-import {Laptop, Moon, Sun} from "lucide-react";
+import {Moon, Sun} from "lucide-react";
+import Icons from "@/components/Icons"
 
 interface ThemeToggleProps {
 }
@@ -24,19 +25,19 @@ const ThemeToggle: FC<ThemeToggleProps> = ({}) => {
             <DropdownMenuItem onClick={() => {
                 setTheme("light")
             }}>
-                <Sun className={"mr-2 h-4 w-4"}/>
+                <Icons.Sun className={"mr-2 h-4 w-4"}/>
                 <span>Light</span>
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => {
                 setTheme("dark")
             }}>
-                <Moon className={"mr-2 h-4 w-4"}/>
+                <Icons.Moon className={"mr-2 h-4 w-4"}/>
                 <span>Dark</span>
             </DropdownMenuItem>
             <DropdownMenuItem onClick={() => {
                 setTheme("system")
             }}>
-                <Laptop className={"mr-2 h-4 w-4"}/>
+                <Icons.Laptop className={"mr-2 h-4 w-4"}/>
                 <span>System</span>
             </DropdownMenuItem>
         </DropdownMenuContent>
